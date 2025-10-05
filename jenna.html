@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A website for jenna</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+        body{
+            font-family:monospace;
+            background: linear-gradient(135deg,#edbcb4,#d5b9ed);
+            color:#333;
+            line-height: 1.6;
+        }
+        p{
+            font-size: larger;
+        }
+        header{
+            text-align: center;
+            padding: 50px 20px 20px;
+        }
+        header h1{
+            font-size: 2.5rem;
+            color:#6d6875;
+        }
+        header p{
+            font-size: 1.4em;
+            color:#0c0c0c;
+        }
+        section.memory{
+            max-width: 900px;
+            margin:30px auto;
+            background: linear-gradient(145deg,#fff0f5,#f0f8ff);
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+            margin-bottom:30px;
+        }
+        section.memory img{
+            width:100%;
+            border-radius: 10px;
+            margin-top: 30px;
+            transition:transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        section.memory img:hover{
+            transform:scale(1.05);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+        }
+        section.memory p{
+            margin-top: 15px;
+            text-align: justify;
+            color:#555;
+        }
+        .quran-verse{
+            display: none;
+            background: #f8edeb;
+            border-left: 7px solid #e5989b;
+            padding:15px;
+            margin:20px auto;
+            border-radius: 8px;
+            max-width: 900px;
+            text-align: center;
+            font-weight: 600;
+        }
+        .btn{
+            display: block;
+            margin: 15px solid #e5989b;
+            padding: 15px 18px;
+            background: #e59b98;
+            border: none;
+            border-radius: 8px;
+            color:#f8f0f0;
+            font-weight: 700;
+            cursor: pointer;
+            transition:background 0.3s ease;
+            text-decoration: none;
+        }
+        .btn:hover{
+            background: #d97d84;
+            color: antiquewhite;
+            box-shadow: 0 8px 10px #222;
+        }
+        footer{
+            text-align: center;
+            padding:20px;
+            font-size: 1em;
+            color:#504c56;
+        }
+        @media (max-width:768px){
+            header h1{
+                font-size: 3em;
+            }
+            header p{
+                font-size: 2em;
+            }
+            section.memory{
+                padding:20px;
+                margin:20px;
+            }
+        }
+        @media(mex-width:480px){
+            header h1{
+                font-size: 3em;
+            }
+            section.memory p {
+                font-size:1em;
+            }
+            .btn{
+                padding:8px 14px;
+                font-size: 1em;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Dear Jenna...!</h1>
+        <p>Where do i even begin to express how much you mean to me?🪄</p>
+        <p>It's been eight amazing years since our friendship began,and honestly,it feels like you've always been a part of my life.(✿◡‿◡)</p>
+    </header>
+
+    <section class="memory">
+        <p>You're not just the one who always listens to every single story i have,no matter how long or silly,and always my biggest cheerleader...🎉</p>
+        <img src="jnk.jpg" alt="jennaa" class="first-img">
+    </section>
+
+    <section class="memory">
+        <p>You are incredibly funny...whenever i feel sad,just talking to you make me feel better... &lt;3</p>
+        <img src = "jnk3.jpg" src="jennaa">
+    </section>
+
+    <section class="memory">
+        <p>You always have a special place in my heart...🌷</p>
+        <img src="jnk1.jpg" src="jennaa">
+    </section>
+
+    <section class="memory">
+        <p>Beyond your amazing ability to brighten any room,I've also witnessed your incredible strength and resilience.I want you to know how immensely pround i am of everything you've accomplished and how much i admire your spirit.(✿◕‿◕✿)</p>
+        <img src="jennaa.jpg" src="jennaa">
+    </section>
+
+    <section class="memory">
+        <p>I am so incredibly grateful to have you in my life.You are not just a friend;you're family.Your unwavering support,your infectious laughter,and your beautiful heart make every day better.🌸<br>You are truly a beautiful person,inside and out,and i cherish our friendship more than words can say.Thank yoy for beign you,and for always making me feel loved and understood...!🍁</p>
+        <img src="jnk2.jpg" src="jennaa">
+    </section>
+
+    <button class="btn" onclick="toggleVerse()">A message for you!</button>
+    <div class="quran-verse" id="quranVerse">
+        <p>"Allah does not burden a soul beyond that it can bear🍃(2:286)"</p>
+    </div>
+
+    <footer>
+        <p>Jennaa...I always pray for you from the bottom of my heart.May Allahﷻ forgive all your sins,the one you know and the one you don't.May He replace every single tear you've cried with overflowing joy and happiness.May Allahﷻ ease your burdens,lighten your heavy heart,and grant you immense peace and comfort.May He give you Strength to overcome all your Struggles and fill your life with blessings,success,and contentment....Ameenn!</p>
+    </footer>
+
+    <script>
+        function toggleVerse(){
+            const verse = document.getElementById('quranVerse');
+            verse.style.display = verse.style.display === 'block' ? 'none' : 'block';
+        }
+    </script>
+</body>
+</html>
